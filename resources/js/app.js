@@ -27,7 +27,23 @@ new Vue({
   render: h => h(App, {
     props: {
       initialPage: JSON.parse(el.dataset.page),
-      resolveComponent: name => require(`./Pages/${name}`).default,
+      // resolveComponent: name => require(`./Pages/${name}`).default,
+      resolveComponent: (component) => {
+        let parts = component.split('/')
+        let type = parts[0]
+        let module_name = parts[1]
+        if (type == 'Module') {
+          let name = parts[2]
+          return import(`~/${module_name}/Resources/assets/js/Pages/${name}.vue`).then(module => module.default)
+        }
+        if (type == 'Package') {
+          let package_name = parts[2]
+          let name = parts[3]
+          return import(`../../vendor/${module_name}/${package_name}/resources/js/Pages/${name}.vue`).then(module => module.default)
+        }
+        let name = parts[2]
+        return import(`@/Pages/${module_name}/${name}`).then(module => module.default)
+      }
     },
   }),
 }).$mount(el)
