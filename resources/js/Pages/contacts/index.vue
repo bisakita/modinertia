@@ -10,7 +10,7 @@
                 <td>Action</td>
             </tr>
             </thead>
-            <tr v-for="row in data">
+            <tr v-for="row in data" v-bind:key="row.id">
                 <td>{{row.name}}</td>
                 <td>{{row.phone}}</td>
                 <td width="130">
