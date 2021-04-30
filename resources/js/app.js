@@ -18,10 +18,30 @@ require('./bootstrap');
 
 import { App, plugin } from '@inertiajs/inertia-vue'
 import Vue from 'vue'
+import VueRouter from 'vue-router';
+import RouterPrefetch from 'vue-router-prefetch'
+import DashboardPlugin from './plugins/dashboard-plugin';
 
 Vue.use(plugin)
+Vue.use(DashboardPlugin)
+Vue.use(VueRouter);
+Vue.use(RouterPrefetch);
+
+import router from './routes/router';
+import i18n from './i18n';
 
 const el = document.getElementById('app')
+
+const ignoreWarnMessage = 'The .native modifier for v-on is only valid on components but it was used on <div>.';
+
+Vue.config.warnHandler = function (msg, vm, trace) {
+  // `trace` is the component hierarchy trace
+  if (msg === ignoreWarnMessage) {
+    msg = null;
+    vm = null;
+    trace = null;
+  }
+}
 
 new Vue({
   render: h => h(App, {
@@ -42,8 +62,10 @@ new Vue({
           return import(`../../vendor/${module_name}/${package_name}/resources/js/Pages/${name}.vue`).then(module => module.default)
         }
         let name = parts[2]
-        return import(`@/Pages/${module_name}/${name}`).then(module => module.default)
+        return import(`@/pages/${module_name}/${name}`).then(module => module.default)
       }
     },
   }),
+  router,
+  i18n
 }).$mount(el)

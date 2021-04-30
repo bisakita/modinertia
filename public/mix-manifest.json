@@ -1,5 +1,9 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
-    "/js/bootstrap.js": "/js/bootstrap.js"
+    "/js/components.js": "/js/components.js?id=d7ac33948d7044ab0065",
+    "/js/dashboard.js": "/js/dashboard.js?id=58eca0d842d032afade1",
+    "/js/extra.js": "/js/extra.js?id=21bbf81431ac131e98cd",
+    "/js/pages.js": "/js/pages.js?id=e8e48e9669d16df82718",
+    "/js/tables.js": "/js/tables.js?id=ec674bb43148217de4d0"
 }
