@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[1],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[15],{
 
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Dashboard/Index.vue?vue&type=script&lang=js&":
 /*!*********************************************************************************************************************************************************************!*\
@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Template_Layout_SampleLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Template/Layout/SampleLayout */ "./resources/js/Template/Layout/SampleLayout.vue");
+/* harmony import */ var _Pages_Layout_DashboardLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Pages/Layout/DashboardLayout */ "./resources/js/Pages/Layout/DashboardLayout.vue");
 //
 //
 //
@@ -17,11 +17,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
- // import Layout from '@/Pages/Layout/DashboardLayout'
+// import Layout from '@/Template/Layout/SampleLayout'
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    Layout: _Template_Layout_SampleLayout__WEBPACK_IMPORTED_MODULE_0__["default"]
+    Layout: _Pages_Layout_DashboardLayout__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   props: {
     user: Object

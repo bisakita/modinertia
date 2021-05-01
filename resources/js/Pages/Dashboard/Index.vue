@@ -7,6 +7,7 @@
 
 <script>
   import Layout from '@/Template/Layout/SampleLayout'
+  // import Layout from '@/Pages/Layout/DashboardLayout'
 
   export default {
     components: {
