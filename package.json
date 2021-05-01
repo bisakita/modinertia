@@ -4,6 +4,7 @@
         "dev": "npm run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch": "npm run development -- --watch",
+        "watchs": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch-poll": "npm run watch -- --watch-poll",
         "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
         "prod": "npm run production",
@@ -19,23 +20,21 @@
         "popper.js": "^1.12",
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.20.1",
-        "sass-loader": "^8.0.0",
         "vue": "^2.6.11",
-        "vue-template-compiler": "^2.6.10",
         "@vue/cli-plugin-babel": "^3.11.0",
         "@vue/cli-plugin-eslint": "^3.11.0",
         "@vue/cli-plugin-pwa": "^3.11.0",
         "@vue/cli-service": "^4.4.1",
         "babel-plugin-component": "^1.1.1",
         "node-sass": "^4.14.1",
-        "vue-cli-plugin-i18n": "^1.0.1"
+        "sass-loader": "^8.0.2",
+        "vue-cli-plugin-i18n": "^1.0.1",
+        "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
         "15": "^0.0.0",
         "@inertiajs/inertia": "^0.8.7",
         "@inertiajs/inertia-vue": "^0.5.12",
-        "vue-loader": "^15.9.6",
-        "vue2-transitions": "^0.3.0",
         "@fullcalendar/core": "^4.4.0",
         "@fullcalendar/daygrid": "^4.4.0",
         "@fullcalendar/interaction": "^4.4.0",
@@ -60,6 +59,7 @@
         "vue-i18n": "^8.18.0",
         "vue-router": "^3.3.0",
         "vue-router-prefetch": "^1.6.0",
-        "vue2-google-maps": "^0.10.7"
+        "vue2-google-maps": "^0.10.7",
+        "vue2-transitions": "^0.3.0"
     }
 }
