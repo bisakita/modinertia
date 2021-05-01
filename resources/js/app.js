@@ -1,4 +1,4 @@
-require('./bootstrap');
+// require('./bootstrap');
 
 // import { InertiaApp } from '@inertiajs/inertia-vue'
 // import Vue from 'vue'
@@ -18,8 +18,18 @@ require('./bootstrap');
 
 import { App, plugin } from '@inertiajs/inertia-vue'
 import Vue from 'vue'
+// import Router from 'vue-router';
+
+import DashboardPlugin from './plugins/dashboard-plugin';
+// import router from './routes/starterRouter';
+// import App from './App.vue';
+
+import i18n from './i18n';
+Vue.use(DashboardPlugin);
 
 Vue.use(plugin)
+// Vue.use(Router)
+// Vue.prototype.$route = 'route'
 
 const el = document.getElementById('app')
 
@@ -45,5 +55,6 @@ new Vue({
         return import(`@/Pages/${module_name}/${name}`).then(module => module.default)
       }
     },
+    i18n,
   }),
 }).$mount(el)

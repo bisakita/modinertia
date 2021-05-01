@@ -2,9 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\DashboardController;
 
-// Route::resource('admin/contacts', 'ContactController');
+// Auth::routes();
 
-Auth::routes();
-
+Route::get('/', [DashboardController::class, 'index'])
+    ->name('dashboard');
 
