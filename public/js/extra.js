@@ -285,7 +285,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#map {\n  height: 100vh;\n}\n", ""]);
+exports.push([module.i, "\n#map {\r\n  height: 100vh;\n}\r\n", ""]);
 
 // exports
 
@@ -304,7 +304,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#worldMap {\n  width: 100%;\n}\n", ""]);
+exports.push([module.i, "\n#worldMap {\r\n  width: 100%;\n}\r\n", ""]);
 
 // exports
 

@@ -29121,7 +29121,6 @@ body.swal2-iosfix {
   .swal2-range input {
     width: 100% !important;
   }
-}
 
   .swal2-range output {
     display: none;
@@ -29553,6 +29552,7 @@ body.swal2-iosfix {
   100% {
     transform: rotate(-405deg);
   }
+}
 
 @keyframes rotatePlaceholder {
   0% {
@@ -32300,7 +32300,6 @@ div.el-table,
     margin-left: 0;
     margin-bottom: 30px;
   }
-}
 
   .login-page .card-login .card-header img {
     width: 70%;
@@ -32311,7 +32310,6 @@ div.el-table,
   .register-page .full-page > .content {
     padding-top: 50px;
   }
-}
 
   .page-header .container h6.category-absolute {
     width: 90%;
@@ -34061,7 +34059,6 @@ div.el-table,
   .card-contributions .card-stats {
     flex-direction: column;
   }
-}
 
   .card-contributions .card-stats .bootstrap-switch {
     margin-bottom: 15px;

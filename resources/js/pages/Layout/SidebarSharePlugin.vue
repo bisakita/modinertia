@@ -128,7 +128,7 @@
   };
 </script>
 <style scoped lang="scss">
-  @import '~@/assets/sass/dashboard/custom/variables';
+  @import '../../../sass/dashboard/custom/variables';
 
   .settings-icon {
     cursor: pointer;

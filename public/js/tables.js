@@ -199,7 +199,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.table-transparent {\n  background-color: transparent !important;\n}\n", ""]);
+exports.push([module.i, "\n.table-transparent {\r\n  background-color: transparent !important;\n}\r\n", ""]);
 
 // exports
 

@@ -166,7 +166,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.stats-container[data-v-f4cdf034] {\n  display: flex;\n  flex-direction: column;\n  color: rgba(255, 255, 255, 0.7);\n  padding-right: 20px;\n}\n.stats-total[data-v-f4cdf034] {\n  display: flex;\n  justify-content: flex-end;\n  margin-bottom: 20px;\n}\n.stats-total-numbers[data-v-f4cdf034] {\n  min-width: 240px;\n  display: flex;\n  justify-content: space-between;\n}\n", ""]);
+exports.push([module.i, "\n.stats-container[data-v-f4cdf034] {\r\n  display: flex;\r\n  flex-direction: column;\r\n  color: rgba(255, 255, 255, 0.7);\r\n  padding-right: 20px;\n}\n.stats-total[data-v-f4cdf034] {\r\n  display: flex;\r\n  justify-content: flex-end;\r\n  margin-bottom: 20px;\n}\n.stats-total-numbers[data-v-f4cdf034] {\r\n  min-width: 240px;\r\n  display: flex;\r\n  justify-content: space-between;\n}\r\n", ""]);
 
 // exports
 

@@ -37449,9 +37449,7 @@ return src;
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module)))
 
-function number2(e) {
-  return [number1(e[0]), number1(e[1])];
-}
+/***/ }),
 
 /***/ "./node_modules/vue-chartjs/es/BaseCharts.js":
 /*!***************************************************!*\
@@ -37571,14 +37569,7 @@ var Scatter = generateChart('scatter-chart', 'scatter');
   Scatter: Scatter
 });
 
-function defaultExtent() {
-  var svg = this.ownerSVGElement || this;
-  if (svg.hasAttribute("viewBox")) {
-    svg = svg.viewBox.baseVal;
-    return [[svg.x, svg.y], [svg.x + svg.width, svg.y + svg.height]];
-  }
-  return [[0, 0], [svg.width.baseVal.value, svg.height.baseVal.value]];
-}
+/***/ }),
 
 /***/ "./node_modules/vue-chartjs/es/index.js":
 /*!**********************************************!*\
@@ -37635,30 +37626,7 @@ var VueCharts = {
 /* harmony default export */ __webpack_exports__["default"] = (VueCharts);
 
 
-    w1 = w0;
-    n1 = n0;
-    e1 = e0;
-    s1 = s0;
-
-    var group = Object(d3_selection__WEBPACK_IMPORTED_MODULE_3__["select"])(that)
-        .attr("pointer-events", "none");
-
-    var overlay = group.selectAll(".overlay")
-        .attr("cursor", cursors[type]);
-
-    if (d3_selection__WEBPACK_IMPORTED_MODULE_3__["event"].touches) {
-      emit.moved = moved;
-      emit.ended = ended;
-    } else {
-      var view = Object(d3_selection__WEBPACK_IMPORTED_MODULE_3__["select"])(d3_selection__WEBPACK_IMPORTED_MODULE_3__["event"].view)
-          .on("mousemove.brush", moved, true)
-          .on("mouseup.brush", ended, true);
-      if (keys) view
-          .on("keydown.brush", keydowned, true)
-          .on("keyup.brush", keyupped, true)
-
-      Object(d3_drag__WEBPACK_IMPORTED_MODULE_1__["dragDisable"])(d3_selection__WEBPACK_IMPORTED_MODULE_3__["event"].view);
-    }
+/***/ }),
 
 /***/ "./node_modules/vue-chartjs/es/mixins/index.js":
 /*!*****************************************************!*\
